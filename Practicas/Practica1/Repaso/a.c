@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdint.h>
 
 int sum(int8_t n){
   return n*(n+1)/2;
