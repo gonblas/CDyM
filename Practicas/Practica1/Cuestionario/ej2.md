@@ -49,7 +49,7 @@ Las dos formas de conexión de un LED a un terminal de entrada y salida son:
 - **Sourcing:** El LED se conecta con su cátodo (-) a GND y su ánodo (+) a una resistencia en serie, que luego va al pin del microcontrolador. Para encender el LED, el pin debe ponerse en 1 lógico (HIGH), permitiendo que la corriente fluya desde el pin hacia GND a través del LED.
 
 $$
-  R = \frac{V}{I_{max}} = \frac{V_{cc} - V_{LED}}{I_{max}} =  ??? V_{LED} depende del led??
+  R = \frac{V}{I_{max}} = \frac{V_{cc} - V_{LED}}{I_{max}} =  \frac{5V - 2.2V}{5mA} = 560 ~\Omega \quad\quad\text{para LED Amarillo}
 $$
 
 
