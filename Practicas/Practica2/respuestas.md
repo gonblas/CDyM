@@ -433,3 +433,15 @@ La biblioteca sleep.h permite poner al microcontrolador en modos de bajo consumo
 
 **d) Explique cuál es la configuración del reloj del sistema dispuesta desde fábrica y que tolerancia tiene la frecuencia del mismo.**
 
+
+# EJERCICIOS PARA REALIZAR CON SIMULADOR
+
+## Ejercicio No 11: MEF
+
+**a) Una forma de implementar un modelo MEF en software es mediante la sentencia switch-case. Utilice como ejemplo el diagrama de estados del controlador de un semáforo y explique este método describiendo como implementar las variables de estados, las entradas, las salidas y las transiciones**
+
+Dado que la transición de un estado a otro no depende de ninguna entrada en un semáforo, se utiliza una MEF de Moore. La forma de representarlo mediante un diagrama de estados es el siguiente:
+
+![MEF_Semaforo](/Practicas/Practica2/semaforo.png)
+
+Para implementarlo en código puede utilizarse una función que sirva de inicializar de la MEF, se guarda el estado y salida iniciales, los cuales estan definidos por enums. Luego, se itera y se actualiza utilizando un switch-case donde cada case representa el estado y dentro del mismo, se implementa la lógica para obtener la salida y la transición al nuevo estado (de requerirse).
